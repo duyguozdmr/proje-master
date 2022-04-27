@@ -7,7 +7,6 @@ import {Link, useLocation } from 'react-router-dom';
 import logo from '../../assets/cosmetics.png';
 import useStyles from './styles';
 
-
 const Navbar = ({totalItems}) => {
     const classes = useStyles();
     const location = useLocation(); 
