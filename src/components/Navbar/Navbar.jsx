@@ -32,6 +32,12 @@ const Navbar = ({totalItems, login}) => {
                                <ShoppingCart/>
                            </Badge>
                         </IconButton>
+
+                        
+                        <IconButton component={Link} to="/" aria-label="Show cart items" color="inherit">
+                           Çıkış Yap
+                        </IconButton>
+                        
                     </div> ) }
 
                         {location.pathname === '/' && (
@@ -40,6 +46,7 @@ const Navbar = ({totalItems, login}) => {
                         <IconButton component={Link} to="/login" aria-label="Show cart items" color="inherit">
                            Giriş Yap
                         </IconButton> 
+                        
 
 
                         <IconButton component={Link} to="/signup" aria-label="Show cart items" color="inherit">
