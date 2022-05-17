@@ -42,7 +42,7 @@ const Navbar = ({totalItems, login}) => {
                         </IconButton> 
 
 
-                        <IconButton component={Link} to="/kayitol" aria-label="Show cart items" color="inherit">
+                        <IconButton component={Link} to="/signup" aria-label="Show cart items" color="inherit">
                            Kayıt Ol
                         </IconButton> 
                         </div>

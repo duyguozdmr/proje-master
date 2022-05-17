@@ -4,6 +4,7 @@ import { Products, Navbar, Cart, Checkout } from './components';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Slider from './components/Slider/Slider';
 import Login from './components/Login/login';
+import SignUp from './components/SignUp/signup';
 
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -70,6 +71,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
                             <Route exact path="/login">
                                 <Login/>
                             </Route>
+
+
+                            <Route exact path = "/signup">
+                                <SignUp></SignUp>
+                            </Route>
+
 
 
                             <Route exact path="/giris">                          

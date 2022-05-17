@@ -1,12 +1,12 @@
 import React from "react";
-import loginImg from "../../login.svg";
+import signUpImg from "../../signup.png";
 import {AppBar, Toolbar, IconButton,Badge,MenuItem,Menu ,Typography, Button} from '@material-ui/core';
 
 import {Link } from 'react-router-dom';
 
 
 
-export class Login extends React.Component {
+export class SignUp extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -14,10 +14,10 @@ export class Login extends React.Component {
   render() {
     return (
       <div className="base-container" ref={this.props.containerRef}>
-        <div className="header">Login</div>
+        <div className="header">SignUp</div>
         <div className="content">
           <div className="image">
-            <img src={loginImg} />
+            <img src={signUpImg} />
           </div>
           <div className="form">
             <div className="form-group">
@@ -28,15 +28,26 @@ export class Login extends React.Component {
               <label htmlFor="password">Password </label>
               <input type="password" name="password" placeholder="password" />
             </div>
+
+            <div className="form-group">
+              <label htmlFor="email">E-Mail </label>
+              <input type="email" name="email" placeholder="email" />
+            </div>
+
+            <div className="form-group">
+              <label htmlFor="phonenum">Phone Number </label>
+              <input type="phonenum" name="phonenum" placeholder="phonenum" />
+            </div>
+
           </div>
         </div>
         <div className="footer">
             <IconButton component={Link} to="/giris"  color="inherit">
-                    Login
+                    SignUp
             </IconButton>
         </div>
       </div>
     );
   }
 }
-export default Login;
+export default SignUp;
