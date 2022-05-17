@@ -64,8 +64,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
                         <Navbar totalItems={cart.total_items} />
                         <Switch>
-                            <Route exact path="/">
+
+                            <Route exact path="/login">
                                 <Login/>
+                            </Route>
+                            <Route exact path="/">
+                               
                                 <Slider />
                                 <Products products={products} onAddToCart={handleAddToCart} />
                             </Route>

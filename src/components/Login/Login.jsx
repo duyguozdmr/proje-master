@@ -116,9 +116,9 @@ const Login = () => {
             return (
                 <Modal
                     visible={visible}
-                    title="Giriş Yap"
+                   title="Giriş Yap"
                     okText="Kayıt Ol"
-                    cancelText="Giriş"
+                    //cancelText="Giriş"
                     onCancel={onCancel}
                     onOk={() => {
                         form
@@ -202,7 +202,7 @@ const Login = () => {
             //With this, we will get all field values.
             const onCreate = (values) => {
                 console.log('Received values of form: ', values);
-                setVisible(true);
+                setVisible(false);
             };
 
             return (
@@ -212,7 +212,9 @@ const Login = () => {
                         visible={visible}
                         onCreate={onCreate}
                         onCancel={() => {
+
                             setVisible(false);
+                            
                         }}
                     />
                 </div>
