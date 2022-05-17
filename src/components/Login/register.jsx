@@ -1,12 +1,7 @@
 import React from "react";
 import loginImg from "../../login.svg";
-import {AppBar, Toolbar, IconButton,Badge,MenuItem,Menu ,Typography, Button} from '@material-ui/core';
 
-import {Link, useLocation } from 'react-router-dom';
-
-
-
-export class Login extends React.Component {
+export class Register extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -14,7 +9,7 @@ export class Login extends React.Component {
   render() {
     return (
       <div className="base-container" ref={this.props.containerRef}>
-        <div className="header">Login</div>
+        <div className="header">Register</div>
         <div className="content">
           <div className="image">
             <img src={loginImg} />
@@ -25,18 +20,21 @@ export class Login extends React.Component {
               <input type="text" name="username" placeholder="username" />
             </div>
             <div className="form-group">
-              <label htmlFor="password">Password </label>
-              <input type="password" name="password" placeholder="password" />
+              <label htmlFor="email">Email</label>
+              <input type="text" name="email" placeholder="email" />
+            </div>
+            <div className="form-group">
+              <label htmlFor="password">Password</label>
+              <input type="text" name="password" placeholder="password" />
             </div>
           </div>
         </div>
         <div className="footer">
-            <IconButton component={Link} to="/giris"  color="inherit">
-                    Login
-            </IconButton>
+          <button type="button" className="btn">
+            Register
+          </button>
         </div>
       </div>
     );
   }
 }
-export default Login;

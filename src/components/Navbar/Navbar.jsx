@@ -18,13 +18,13 @@ const Navbar = ({totalItems, login}) => {
         <>
             <AppBar position="fixed" className={classes.appBar} color="inherit">
                 <Toolbar>
-                    <Typography  component={Link} to="/"  variant="h6" className={classes.title} color="inherit">
+                    <Typography  component={Link} to="/giris"  variant="h6" className={classes.title} color="inherit">
                         <img src={logo} alt="MidShines Cosmetics" height="70px" className={classes.image} />
                         Midshines Cosmetics 
                     </Typography>
                     <div className={classes.grow} />
 
-                    {location.pathname=== '/' &&  (
+                    {location.pathname=== '/giris' &&  (
                     <div className={classes.button} >
 
                         <IconButton  component={Link} to="/cart" aria-label="Show cart items" color="inherit">
@@ -32,13 +32,27 @@ const Navbar = ({totalItems, login}) => {
                                <ShoppingCart/>
                            </Badge>
                         </IconButton>
+                    </div> ) }
 
+                        {location.pathname === '/' && (
+                                                    
+                        <div className = {classes.button} >                            
                         <IconButton component={Link} to="/login" aria-label="Show cart items" color="inherit">
                            Giriş Yap
-                        </IconButton>
+                        </IconButton> 
+
+
+                        <IconButton component={Link} to="/kayitol" aria-label="Show cart items" color="inherit">
+                           Kayıt Ol
+                        </IconButton> 
+                        </div>
+
+                        ) }
+                        
+
 
                     
-                        </div> ) }
+                    
                 </Toolbar>
             </AppBar>
         </>

@@ -3,7 +3,7 @@ import { commerce } from './lib/commerce';
 import { Products, Navbar, Cart, Checkout } from './components';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Slider from './components/Slider/Slider';
-import Login from './components/Login/Login';
+import Login from './components/Login/login';
 
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -62,17 +62,27 @@ import 'bootstrap/dist/css/bootstrap.min.css';
                 <Router>
                     <div>
 
+  
+
                         <Navbar totalItems={cart.total_items} />
                         <Switch>
 
                             <Route exact path="/login">
                                 <Login/>
                             </Route>
-                            <Route exact path="/">
-                               
+
+
+                            <Route exact path="/giris">                          
                                 <Slider />
                                 <Products products={products} onAddToCart={handleAddToCart} />
                             </Route>
+
+                            <Route exact path="/">                              
+                                <Slider />
+                                <Products products={products} onAddToCart={handleAddToCart} />
+                            </Route>
+
+
                             <Route exact path="/cart">
                                 <Cart
                                     cart={cart}
