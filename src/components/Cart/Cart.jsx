@@ -10,7 +10,7 @@ const Cart = ({cart, handleUpdateCartQty, handleRemoveFromCart, handleEmptyCart}
     const classes= useStyles();
 
     const EmptyCart=()=>(
-        <Typography variant="subtitle1">Sepetin boş görünüyor!
+        <Typography variant="subtitle1">Sepetin bomboş görünüyor!
             <Link to="/" className={classes.link}> Haydi alışveriş zamanı!</Link>
         </Typography>
     );
