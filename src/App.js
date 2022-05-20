@@ -3,7 +3,7 @@ import { commerce } from './lib/commerce';
 import { Products, Navbar, Cart, Checkout } from './components';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Slider from './components/Slider/Slider';
-import Login from './components/Login/login';
+import Login from './components/Login/Login';
 import SignUp from './components/SignUp/signup';
 
 import './App.css';

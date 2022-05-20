@@ -1,5 +1,6 @@
 import React from "react";
 import loginImg from "../../login.svg";
+import "./style.css";
 
 export class Register extends React.Component {
   constructor(props) {
@@ -12,20 +13,41 @@ export class Register extends React.Component {
         <div className="header">Register</div>
         <div className="content">
           <div className="image">
-            <img src={loginImg} />
+            <img className="imageimg" src={loginImg} />
           </div>
           <div className="form">
             <div className="form-group">
-              <label htmlFor="username">Username</label>
-              <input type="text" name="username" placeholder="username" />
+              <label className="lblTitle" htmlFor="username">
+                Username
+              </label>
+              <input
+                className="inputform"
+                type="text"
+                name="username"
+                placeholder="username"
+              />
             </div>
             <div className="form-group">
-              <label htmlFor="email">Email</label>
-              <input type="text" name="email" placeholder="email" />
+              <label className="lblTitle" htmlFor="email">
+                Email
+              </label>
+              <input
+                className="inputform"
+                type="text"
+                name="email"
+                placeholder="email"
+              />
             </div>
             <div className="form-group">
-              <label htmlFor="password">Password</label>
-              <input type="text" name="password" placeholder="password" />
+              <label className="lblTitle" htmlFor="password">
+                Password
+              </label>
+              <input
+                className="inputform"
+                type="text"
+                name="password"
+                placeholder="password"
+              />
             </div>
           </div>
         </div>
